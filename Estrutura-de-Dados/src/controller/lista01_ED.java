@@ -42,31 +42,34 @@ public class lista01_ED {
 	
 	public void exercicio02() {
 		
-		Random random = new Random();
-        int[] arrInt = new int[5];
-        int[] arrFat = new int[5];
+			int [] vetorInt = new int [5];
+			String resultado = "";
+			int [] vetorFat = new int [5];
+			
+			
+			for(int i = 0; i < 5; i++) {
+				vetorInt[i] = (int)(1 + Math.random() * 13);
+				
+				resultado += "Fat " + vetorInt[i] + ": ";
+				vetorFat[i] = funcaofatorial(vetorInt[i]);
+				resultado += vetorFat[i] + "\n";
+			}
 
-        for (int i = 0; i < arrInt.length; i++) {
-            arrInt[i] = random.nextInt(10);
-            arrFat[i] = factor(arrInt[i]);
-        }
+			System.out.println(resultado);
 
-        System.out.println("Vetor inteiro");
-        printResult(arrInt);
-        System.out.println("Vetor fatorial");
-        printResult(arrFat);
-    }
+		}
 
-    public static int factor(int n) {
-        return n==0 ? 1 : n * factor(n-1);
-    }
+		static int funcaofatorial(int vetor) {
 
-    public static void printResult(int[] arr){
-        for(int data : arr){
-            System.out.print(data + " ");
-        }
-        System.out.println();
-    }
+			int fat = 1;
+
+			for(int i = vetor; i > 1 ; i--) {
+				fat *= i;
+			}
+
+			return fat;
+		}
+    
     
     //3. Carregar um vetor [100] inteiros positivos ou negativos. Classificar este vetor em ordem
     // crescente e apresentar os valores...
