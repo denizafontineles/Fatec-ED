@@ -12,7 +12,7 @@ public class Principal {
 		int opc = 0;
 
 		do {
-		    opc = Integer.parseInt(JOptionPane.showInputDialog(" \n1 - Exercício-01 \n2 - Exercício-02 \n3 - Exercício-03 \n4 - Exercício-04 \n5 - Exercício-05 \n9 - Finalizar"));
+		    opc = Integer.parseInt(JOptionPane.showInputDialog(" \n1 - Exercício-01 \n2 - Exercício-02 \n3 - Exercício-03 \n4 - Exercício-04 \n5 - Exercício-05 \n5 - Exercício-07 \n9 - Finalizar"));
 		    switch (opc) { 
 		        case 1:
 		            m.exercicio01();
@@ -28,6 +28,10 @@ public class Principal {
 		           break;
 		        case 5:
 		            m.exercicio05();
+		           break;
+		           
+		        case 7:
+		            m.exercicio07();
 		           break;
 		       
 		        case 9:

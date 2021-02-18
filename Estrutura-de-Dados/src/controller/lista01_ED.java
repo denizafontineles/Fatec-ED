@@ -165,5 +165,23 @@ public class lista01_ED {
 			
 	}
 	
+	//	7) Realize recursivamente a soma de todos os números de 1 a 100.
+	
+	public void exercicio07() {
+		
+		int index = 100;
+		int res = soma(index);
+		System.out.println("Soma dos valores de 1 a 100: " +res);
+	}
+	
+	public int soma(int index) {
+		if(index == 1) {
+			return 1;
+		}
+		else {
+			return (index + soma( index-1 ));
+		}
+	}
+	
 } 
 
