@@ -1,11 +1,10 @@
 package controller;
 
 public class listaCaractereEx2 {
-	private int[] dados; // array de strings com as temperaturas
-	private int tamanho; // capacidade de elementos guardados na lista
+	private int[] dados;
+	private int tamanho; 
 
 
-			//  construtor
 			public listaCaractereEx2() {
 				this.dados = new int[5];
 				this.tamanho = 0;

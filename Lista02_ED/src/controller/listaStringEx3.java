@@ -2,11 +2,9 @@ package controller;
 
 public class listaStringEx3 {
 
-	private String[] dados; // array de strings com as temperaturas
-	private int tamanho; // capacidade de elementos guardados na lista
+	private String[] dados; 
+	private int tamanho; 
 
-
-			//  construtor
 			public listaStringEx3() {
 				this.dados = new String[5];
 				this.tamanho = 0;
